@@ -1,10 +1,15 @@
 <script>
-import Hash from "./hash.svelte";
 
-	
+
+import Hash from "./hash.svelte";
+import Search from "./searchbar.svelte" 
+
+let keyword = "";
+
 </script>
 
-<Hash />
+<Search bind:keyword={keyword} />
+<Hash keyword={keyword}/>
 
 
 <style>
